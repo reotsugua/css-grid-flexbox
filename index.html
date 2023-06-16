@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid e Flexbox</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css">
+    <style>
+        body, a{
+            font-size: 1.2rem;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+        }
+        nav{
+            display: flex; 
+            justify-content: space-between; 
+            flex-wrap: wrap;
+            align-items: center;
+            margin: 0 25px 0 25px;
+        }
+        ul{
+            display: flex; 
+            justify-content: space-between; 
+            
+            flex-wrap: wrap;
+        }
+        li{
+            padding: 20px;
+            
+        }
+        section{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            flex: 0 1 200px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .img{
+            background-color: rgb(131, 131, 131);
+            width: 200px;
+            height: 150px;
+            margin-bottom: 10px;
+
+        }
+        div{
+            text-align: center;
+        }        
+    </style>
+</head>
+<body>
+    <header style="background-color: #0a0a0a; margin-bottom: 2%;">
+        <nav>
+            <a href="#">Logo</a>
+            <div>
+                <ul>
+                    <a href=""><li>Sobre</li></a>
+                    <a href=""><li>Produtos</li></a>
+                    <a href=""><li>Contato</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div>
+                <div class="img"></div>
+                <h3>Bicicletas</h3>
+            </div>
+            <div>
+                <div class="img"></div>
+                <h3>Bicicletas</h3>
+            </div>
+            <div>
+                <div class="img"></div>
+                <h3>Bicicletas</h3>
+            </div>
+            <div>
+                <div class="img"></div>
+                <h3>Bicicletas</h3>
+            </div>
+            <div>
+                <div class="img"></div>
+                <h3>Bicicletas</h3>
+            </div>
+            <div>
+                <div class="img"></div>
+                <h3>Bicicletas</h3>
+            </div>
+        </section>
+        
+    </main>
+</body>
+</html>
